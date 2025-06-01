@@ -12,11 +12,15 @@ const JobOffer = () => {
             <div className="flex flex-col md:flex-row">
               <div className="md:flex-1">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                    <span className="font-bold text-blue-600">ZT</span>
+                  <div className="w-28 h-28 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <img
+                      src="./images/zaytech_logo.jpg" // Replace with your company logo path
+                      alt="Zytech Software Logo"
+                      className="w-10 h-10 object-cover rounded-full"
+                    />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-800">Zytech Software</h3>
+                    <h3 className="text-xl font-semibold text-gray-800">Zaytech Software</h3>
                     <p className="text-gray-600">Software Development Company</p>
                   </div>
                 </div>
@@ -26,7 +30,7 @@ const JobOffer = () => {
                 <div className="space-y-2">
                   <div className="flex items-center text-gray-600">
                     <MapPin size={18} className="mr-2 text-gray-500" />
-                    <span>Casablanca, Morocco</span>
+                    <span>Mohammedia, Morocco</span>
                   </div>
                   <div className="flex items-center text-gray-600">
                     <Briefcase size={18} className="mr-2 text-gray-500" />
@@ -34,7 +38,7 @@ const JobOffer = () => {
                   </div>
                   <div className="flex items-center text-gray-600">
                     <Calendar size={18} className="mr-2 text-gray-500" />
-                    <span>6 months</span>
+                    <span>2 months</span>
                   </div>
                 </div>
               </div>
