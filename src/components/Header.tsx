@@ -42,7 +42,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16 md:h-20">
           <div>
             <h1 className="text-2xl font-bold font-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">My Hyperdoc</h1>
-            <p className="text-sm text-gray-600">Internship & Career Preparation</p>
+            <p className="text-sm text-gray-600">Mohammed Haji</p>
           </div>
 
           <nav className="hidden md:block">
