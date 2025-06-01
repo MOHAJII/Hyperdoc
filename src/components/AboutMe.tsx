@@ -12,7 +12,7 @@ const AboutMe = () => {
             <div className="relative group">
               <div className="w-48 h-48 mx-auto rounded-full overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                 <img
-                  src="/images/profile.jpg"
+                  src="./images/profile.jpg"
                   alt="Mohammed Haji"
                   className="w-full h-full object-cover rounded-full shadow-lg"
                 />
