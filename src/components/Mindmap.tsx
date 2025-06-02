@@ -74,6 +74,19 @@ const jobMarketNodes: Node[] = [
   { id: 'dm', data: { label: 'LinkedIn DM', desc: 'Direct messages on LinkedIn.' }, position: { x: 350, y: 350 } },
 ];
 
+const jobMarketEdges: Edge[] = [
+  { id: 'e1', source: 'hidden', target: 'referrals' },
+  { id: 'e2', source: 'referrals', target: 'famfriends' },
+  { id: 'e3', source: 'referrals', target: 'professors' },
+  { id: 'e4', source: 'hidden', target: 'unpublished' },
+  { id: 'e5', source: 'unpublished', target: 'startups' },
+  { id: 'e6', source: 'unpublished', target: 'events' },
+  { id: 'e7', source: 'hidden', target: 'networking' },
+  { id: 'e8', source: 'networking', target: 'conversations' },
+  { id: 'e9', source: 'networking', target: 'meetups' },
+  { id: 'e10', source: 'networking', target: 'dm' },
+];
+
 const tabData = [
   {
     label: 'My Networking',
