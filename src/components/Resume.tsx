@@ -19,24 +19,50 @@ const Resume = () => {
               View my complete professional background, skills, and experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-              <a 
-                href="./docs/ats-resume.pdf" // Replace with your ATS-friendly resume path
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gray-100 text-blue-700 rounded-lg transition-colors hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-              >
-                <Download size={20} className="mr-2" />
-                View ATS-friendly Resume
-              </a>
-              <a 
-                href="./docs/resume.pdf" // Replace with your normal resume path
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-              >
-                <Download size={20} className="mr-2" />
-                View Normal Resume
-              </a>
+              {/* ATS-friendly Resume */}
+              <div className="flex flex-col gap-2">
+                <span className="font-medium text-gray-700 mb-1">ATS-friendly Resume</span>
+                <a
+                  href="./docs/ats-resume-english.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-gray-100 text-blue-700 rounded-lg transition-colors hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                >
+                  <Download size={20} className="mr-2" />
+                  English Version
+                </a>
+                <a
+                  href="./docs/ats-resume-french.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-gray-100 text-blue-700 rounded-lg transition-colors hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                >
+                  <Download size={20} className="mr-2" />
+                  French Version
+                </a>
+              </div>
+              {/* Normal Resume */}
+              <div className="flex flex-col gap-2">
+                <span className="font-medium text-gray-700 mb-1">Normal Resume</span>
+                <a
+                  href="./docs/resume-english.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                >
+                  <Download size={20} className="mr-2" />
+                  English Version
+                </a>
+                <a
+                  href="./docs/resume-french.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                >
+                  <Download size={20} className="mr-2" />
+                  French Version
+                </a>
+              </div>
             </div>
           </div>
         </div>
