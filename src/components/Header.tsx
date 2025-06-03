@@ -4,12 +4,31 @@ import { Menu, X } from 'lucide-react';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>('about');
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
+      // Detect active section
+      const sectionOffsets = sections.map(section => {
+        const el = document.getElementById(section.id);
+        return {
+          id: section.id,
+          offset: el ? el.getBoundingClientRect().top - 80 : Infinity // 80px header height offset
+        };
+      });
+      // Check if near bottom of page
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const pageHeight = document.body.offsetHeight;
+      if (pageHeight - scrollPosition < 10) {
+        setActiveSection(sections[sections.length - 1].id);
+        return;
+      }
+      const visibleSection = sectionOffsets.reduce((prev, curr) => {
+        return Math.abs(curr.offset) < Math.abs(prev.offset) ? curr : prev;
+      }, { id: 'about', offset: Infinity });
+      setActiveSection(visibleSection.id);
     };
-    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -30,6 +49,7 @@ const Header = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
     setMobileMenuOpen(false);
+    setActiveSection(id);
   };
 
   return (
@@ -51,7 +71,9 @@ const Header = () => {
                 <li key={section.id}>
                   <button
                     onClick={() => scrollTo(section.id)}
-                    className="text-gray-600 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-800 transition-colors duration-200"
+                    className={`cursor-pointer text-gray-600 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-800 transition-colors duration-200 relative px-1
+                      ${activeSection === section.id ? 'text-blue-700 font-bold after:content-[""] after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-1 after:rounded-full after:bg-gradient-to-r after:from-blue-500 after:to-blue-800 after:opacity-80' : ''}`}
+                    style={{ zIndex: 1 }}
                   >
                     {section.name}
                   </button>
@@ -77,7 +99,9 @@ const Header = () => {
                 <li key={section.id}>
                   <button
                     onClick={() => scrollTo(section.id)}
-                    className="text-gray-600 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-800 transition-colors duration-200 w-full text-left py-2"
+                    className={`cursor-pointer text-gray-600 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-800 transition-colors duration-200 w-full text-left py-2 relative px-1
+                      ${activeSection === section.id ? 'text-blue-700 font-bold after:content-[""] after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-1 after:rounded-full after:bg-gradient-to-r after:from-blue-500 after:to-blue-800 after:opacity-80' : ''}`}
+                    style={{ zIndex: 1 }}
                   >
                     {section.name}
                   </button>

@@ -29,7 +29,7 @@ const AboutMe = () => {
               <div className="space-y-3 mt-6">
                 <div className="flex items-center">
                   <Mail size={18} className="text-blue-600 mr-3" />
-                  <span className="text-gray-700">mohammedhaji9991@gmail.com</span>
+                  <a href="mailto:mohammedhaji9991@gmail.com" className="text-gray-700 hover:underline">mohammedhaji9991@gmail.com</a>
                 </div>
                 <div className="flex items-center">
                   <Phone size={18} className="text-blue-600 mr-3" />
@@ -37,7 +37,7 @@ const AboutMe = () => {
                 </div>
                 <div className="flex items-center">
                   <MapPin size={18} className="text-blue-600 mr-3" />
-                  <span className="text-gray-700">Mohammedia, Maroc</span>
+                  <span className="text-gray-700">El Jadida, Maroc</span>
                 </div>
               </div>
 

@@ -4,7 +4,7 @@ const CoverLetter = () => {
   return (
     <section id="cover-letter" className="pt-16 -mt-16">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl font-bold mb-6 text-gray-800">Cover Letter</h2>
+        <h2 className="section-title">Cover Letter</h2>
 
         <div className="bg-white shadow-md rounded-lg">
           <div className="p-6 sm:p-8">
