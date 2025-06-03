@@ -20,19 +20,19 @@ const Resume = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
               <a 
-                href="/resume-ats.pdf" // Replace with your ATS-friendly resume path
+                href="./docs/ats-resume.pdf" // Replace with your ATS-friendly resume path
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                className="inline-flex items-center px-6 py-3 bg-gray-100 text-blue-700 rounded-lg transition-colors hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
               >
                 <Download size={20} className="mr-2" />
                 View ATS-friendly Resume
               </a>
               <a 
-                href="/resume.pdf" // Replace with your normal resume path
+                href="./docs/resume.pdf" // Replace with your normal resume path
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gray-200 text-blue-700 rounded-lg transition-colors hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
               >
                 <Download size={20} className="mr-2" />
                 View Normal Resume

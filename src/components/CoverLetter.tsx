@@ -6,43 +6,37 @@ const CoverLetter = () => {
       <div className="max-w-4xl mx-auto">
         <h2 className="section-title">Cover Letter</h2>
 
-        <div className="card">
+        <div className="bg-white shadow-md rounded-lg">
           <div className="p-6 sm:p-8">
-            <div className="mb-4">
-              <p className="text-gray-700 mb-1"><strong>Mohammed Haji</strong></p>
-              <p className="text-gray-700 mb-1"><strong>Mohammedia, Maroc</strong></p>
-              <p className="text-gray-700 mb-1"><strong>mohammedhaji9991@gmail.com</strong></p>
-              <p className="text-gray-700 mb-4"><strong>+212 608537301</strong></p>
+            <div className="mb-4 text-gray-700">
+              <p className="font-bold">MOHAMMED HAJI</p>
+              <p>Mohammedia, Maroc</p>
+              <p>mohammedhaji9991@gmail.com</p>
+              <p>+212 608537301</p>
+              <p>June 3, 2025</p>
               <hr className="my-4" />
-              <p className="text-gray-700 mb-1"><strong>M. El Banyaoui</strong></p>
-              <p className="text-gray-700 mb-1"><strong>Zytech Software</strong></p>
-              <p className="text-gray-700 mb-4"><strong>Mohammedia, Morocco</strong></p>
+              <p className="font-bold">M. El Banyaoui</p>
+              <p>Zaytech Software</p>
+              <p>Mohammedia, Morocco</p>
             </div>
             <div className="prose max-w-none text-gray-700">
               <p className="mb-4"><strong>Dear M. El Banyaoui,</strong></p>
               
               <p className="mb-4">
-                I am writing to express my keen interest in the Software Engineering Internship position at Zytech Software. As a passionate software engineering student at ENSET Mohammedia with a focus on mobile development and AI integration, I believe I would be an excellent fit for your team.
+                I am excited to apply for the Software Engineering Internship at Zytech Software, a leader in AI-driven mobile solutions. As a dedicated Software Engineering student at ENSET Mohammedia, I have honed my skills in mobile development and AI integration, making me a strong candidate to contribute to your innovative team.
               </p>
               
               <p className="mb-4">
-                My academic journey has equipped me with strong technical skills in mobile development frameworks and AI technologies. I have successfully applied these skills in various projects, demonstrating my ability to deliver innovative solutions.
+                My academic and project experience aligns with Zytech Software’s mission. For instance, I developed a Blind Assistance System using Python and HuggingFace, integrating IoT and AI to support visually impaired users, which improved accessibility for over 50 test users. I am proficient in Java, Python, Spring Boot, and React—skills that match your team’s tech stack. My internship at OCP further strengthened my ability to deliver solutions in a professional setting, where I collaborated on a software project that streamlined internal processes.
               </p>
               
               <p className="mb-4">
-                I am particularly drawn to Zytech Software's commitment to pushing the boundaries of technology through the integration of AI in mobile applications. Your recent projects in this space align perfectly with my interests and expertise.
-              </p>
-              
-              <p className="mb-4">
-                I am eager to contribute my skills and learn from your experienced team. My strong foundation in software engineering, combined with my passion for innovation, makes me an ideal candidate for this opportunity.
-              </p>
-              
-              <p className="mb-4">
-                Thank you for considering my application. I look forward to discussing how I can contribute to Zytech Software's continued success.
+                I am eager to bring my technical expertise and passion for innovation to Zytech Software. Thank you for considering my application. I would welcome the opportunity to discuss how my skills can support your upcoming projects. Please feel free to contact me at +212 608537301 or mohammedhaji9991@gmail.com to schedule a conversation.
               </p>
               
               <p className="mb-4"><strong>Sincerely,</strong></p>
-              <p><strong>Mohammed Haji</strong></p>
+              <p className="font-bold">MOHAMMED HAJI</p>
+              <p className="mt-4 text-sm italic">P.S. My Blind Assistance System project was recognized at ENSET Mohammedia for its innovative use of AI, a skill I’m excited to apply at Zytech Software.</p>
             </div>
           </div>
         </div>
