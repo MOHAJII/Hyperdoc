@@ -36,7 +36,7 @@ const CoverLetter = () => {
               
               <p className="mb-4"><strong>Sincerely,</strong></p>
               <p className="font-bold">MOHAMMED HAJI</p>
-              <p className="mt-4 text-sm italic">P.S. My Blind Assistance System project was recognized at ENSET Mohammedia for its innovative use of AI, a skill I’m excited to apply at Zaytech.</p>
+              <img src="/images/sign.jpg" alt="Signature" className="h-40" />
             </div>
           </div>
         </div>
