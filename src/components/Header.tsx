@@ -60,9 +60,16 @@ const Header = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16 md:h-20">
-          <div>
-            <h1 className="text-2xl font-bold font-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">My Hyperdoc</h1>
-            <p className="text-sm text-gray-600">Mohammed Haji</p>
+          <div className="flex items-center space-x-3">
+            <img
+              src="./images/profile.jpg"
+              alt="Profile"
+              className="w-10 h-10 rounded-full shadow-md border-2 border-blue-600 object-cover"
+            />
+            <div>
+              <h1 className="text-2xl font-bold font-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">My Hyperdoc</h1>
+              <p className="text-sm text-gray-600">Mohammed Haji</p>
+            </div>
           </div>
 
           <nav className="hidden md:block">
@@ -100,7 +107,7 @@ const Header = () => {
                   <button
                     onClick={() => scrollTo(section.id)}
                     className={`cursor-pointer text-gray-600 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-800 transition-colors duration-200 w-full text-left py-2 relative px-1
-                      ${activeSection === section.id ? 'text-blue-700 font-bold after:content-[""] after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-1 after:rounded-full after:bg-gradient-to-r after:from-blue-500 after:to-blue-800 after:opacity-80' : ''}`}
+                      ${activeSection === section.id ? 'text-blue-700 font-bold after:content-[\'\'] after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-1 after:rounded-full after:bg-gradient-to-r after:from-blue-500 after:to-blue-800 after:opacity-80' : ''}`}
                     style={{ zIndex: 1 }}
                   >
                     {section.name}
